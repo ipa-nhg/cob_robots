@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+
+	<group>
+		<machine name="cob4-2-h1" address="$(arg cob4-2-h1)" env-loader="$(arg env-script)" default="true" timeout="30"/>
+
+		<!-- start hardware -->
+		<group unless="$(arg sim)">
+			<include file="$(find cob_bringup)/tools/pc_monitor.launch">
+				<arg name="robot" value="$(arg robot)"/>
+				<arg name="pc" value="$(arg cob4-2-h1)"/>
+			</include>
+		</group>
+
+		<include file="$(find cob_bringup)/components/cob4_head_camera.launch">
+			<arg name="robot" value="$(arg robot)"/>
+			<arg name="sim" value="$(arg sim)"/>
+		</include>
+
+		<!-- start common nodes used in hardware and simulation -->
+		<include file="$(find cob_bringup)/drivers/sound.launch">
+			<arg name="robot" value="$(arg robot)"/>
+		</include>
+	</group>
+
+</launch>
