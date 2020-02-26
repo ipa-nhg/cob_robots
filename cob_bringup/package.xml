@@ -39,7 +39,6 @@
   <exec_depend>cob_image_flip</exec_depend>
   <exec_depend>cob_light</exec_depend>
   <exec_depend>cob_linear_nav</exec_depend>
-  <exec_depend>cob_mecanum_controller</exec_depend>
   <exec_depend>cob_mimic</exec_depend>
   <exec_depend>cob_monitoring</exec_depend>
   <exec_depend>cob_moveit_config</exec_depend>
