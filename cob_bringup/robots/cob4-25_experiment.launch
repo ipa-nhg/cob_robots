@@ -1738,12 +1738,7 @@
   <remap from="~colorimage_in" to="/sensorring_cam3d/rgb/image_raw" />
   <remap from="~colorimage_out" to="/sensorring_cam3d_upright/rgb/image_raw" />
 </node>
-<node pkg="nodelet" type="nodelet" machine="s1_juansabeli_26022_2964741516124779847" ns="/sensorring_cam3d/" args="load realsense2_camera/RealSenseNodeFactory sensorring_cam3d_nodelet_manager" respawn="False" respawn_delay="0.0" name="realsense2_camera" required="False">
-  <remap from="depth/camera_info" to="depth/camera_info" />
-  <remap from="depth/color/points" to="depth/points" />
-  <remap from="color/camera_info" to="rgb/camera_info" />
-  <remap from="color/image_raw" to="rgb/image_raw" />
-</node>
+
 <node pkg="nodelet" type="nodelet" machine="s1_juansabeli_26022_2964741516124779847" ns="/sensorring_cam3d/" args="manager" output="screen" respawn="False" respawn_delay="0.0" name="sensorring_cam3d_nodelet_manager" required="False">
 </node>
 <node pkg="cob_sound" type="sound" machine="h1_juansabeli_26022_8803712036344224672" ns="/" args="" output="screen" respawn="False" respawn_delay="0.0" name="sound" required="False">
@@ -1769,12 +1764,7 @@
   <remap from="~colorimage_in" to="/torso_cam3d_down/rgb/image_raw" />
   <remap from="~colorimage_out" to="/torso_cam3d_down_upright/rgb/image_raw" />
 </node>
-<node pkg="nodelet" type="nodelet" machine="t2_juansabeli_26022_4438243127858636928" ns="/torso_cam3d_down/" args="load realsense2_camera/RealSenseNodeFactory torso_cam3d_down_nodelet_manager" respawn="False" respawn_delay="0.0" name="realsense2_camera" required="False">
-  <remap from="depth/camera_info" to="depth/camera_info" />
-  <remap from="depth/color/points" to="depth/points" />
-  <remap from="color/camera_info" to="rgb/camera_info" />
-  <remap from="color/image_raw" to="rgb/image_raw" />
-</node>
+
 <node pkg="nodelet" type="nodelet" machine="t2_juansabeli_26022_4438243127858636928" ns="/torso_cam3d_down/" args="manager" output="screen" respawn="False" respawn_delay="0.0" name="torso_cam3d_down_nodelet_manager" required="False">
 </node>
 <node pkg="cob_monitoring" type="hz_monitor.py" machine="t1_juansabeli_26022_87559898931483626" ns="/torso_cam3d_left/" args="" output="screen" respawn="False" respawn_delay="0.0" name="hz_monitor_torso_cam3d_left" required="False">
@@ -1786,12 +1776,7 @@
   <remap from="~colorimage_in" to="/torso_cam3d_left/rgb/image_raw" />
   <remap from="~colorimage_out" to="/torso_cam3d_left_upright/rgb/image_raw" />
 </node>
-<node pkg="nodelet" type="nodelet" machine="t1_juansabeli_26022_87559898931483626" ns="/torso_cam3d_left/" args="load realsense2_camera/RealSenseNodeFactory torso_cam3d_left_nodelet_manager" respawn="False" respawn_delay="0.0" name="realsense2_camera" required="False">
-  <remap from="depth/camera_info" to="depth/camera_info" />
-  <remap from="depth/color/points" to="depth/points" />
-  <remap from="color/camera_info" to="rgb/camera_info" />
-  <remap from="color/image_raw" to="rgb/image_raw" />
-</node>
+
 <node pkg="nodelet" type="nodelet" machine="t1_juansabeli_26022_87559898931483626" ns="/torso_cam3d_left/" args="manager" output="screen" respawn="False" respawn_delay="0.0" name="torso_cam3d_left_nodelet_manager" required="False">
 </node>
 <node pkg="cob_monitoring" type="hz_monitor.py" machine="t3_juansabeli_26022_2104370026481658469" ns="/torso_cam3d_right/" args="" output="screen" respawn="False" respawn_delay="0.0" name="hz_monitor_torso_cam3d_right" required="False">
@@ -1803,12 +1788,7 @@
   <remap from="~colorimage_in" to="/torso_cam3d_right/rgb/image_raw" />
   <remap from="~colorimage_out" to="/torso_cam3d_right_upright/rgb/image_raw" />
 </node>
-<node pkg="nodelet" type="nodelet" machine="t3_juansabeli_26022_2104370026481658469" ns="/torso_cam3d_right/" args="load realsense2_camera/RealSenseNodeFactory torso_cam3d_right_nodelet_manager" respawn="False" respawn_delay="0.0" name="realsense2_camera" required="False">
-  <remap from="depth/camera_info" to="depth/camera_info" />
-  <remap from="depth/color/points" to="depth/points" />
-  <remap from="color/camera_info" to="rgb/camera_info" />
-  <remap from="color/image_raw" to="rgb/image_raw" />
-</node>
+
 <node pkg="nodelet" type="nodelet" machine="t3_juansabeli_26022_2104370026481658469" ns="/torso_cam3d_right/" args="manager" output="screen" respawn="False" respawn_delay="0.0" name="torso_cam3d_right_nodelet_manager" required="False">
 </node>
 </launch>
